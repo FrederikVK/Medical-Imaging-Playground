@@ -1,0 +1,18 @@
+# Data extraction
+
+# Data work
+pandas==2.3.1
+pyarrow==20.0.0
+
+# Modelling
+scikit-learn==1.7.0
+
+# Plotting
+matplotlib==3.10.3
+plotly==6.2.0
+
+# Other
+python-dotenv==1.1.1
+ipykernel==6.29.5
+tqdm==4.67.1
+pre_commit==4.2.0
