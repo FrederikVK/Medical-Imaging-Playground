@@ -1,0 +1,19 @@
+{
+  "name": "Conda Environment",
+  "image": "mcr.microsoft.com/devcontainers/miniconda:latest",
+
+  "updateContentCommand": "conda env update -f environment.yml && echo 'conda activate $(head -1 environment.yml | cut -d\" \" -f2)' >> ~/.bashrc",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/bin/python"
+      }
+    }
+  }
+}
+
